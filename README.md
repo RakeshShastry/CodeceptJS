@@ -169,6 +169,10 @@ However, we can narrow the search to particular element by providing a second pa
 I.see('User is valid');
 // better to specify context:
 I.see('User is valid', '.alert-success');
+
+For DropDown to Assert against the Selected Dropdown
+
+I.see(value,"select option[selected]")
 ```
 
 In this case 'User is valid' string will be searched only inside elements located by CSS `.alert-success`.
